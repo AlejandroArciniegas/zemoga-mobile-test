@@ -23,8 +23,6 @@ class JSONPlaceHolderAPI {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users?id=\(id)") else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             let user = try! JSONDecoder().decode([User].self, from: data!)
-            print("User Objects: ")
-            print(user.count)
             DispatchQueue.main.async {
                 if(user.count<=0){
                     completion(User())

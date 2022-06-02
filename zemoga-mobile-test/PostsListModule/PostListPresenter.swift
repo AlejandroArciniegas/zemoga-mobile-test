@@ -57,7 +57,6 @@ class PostListsPresenter: ObservableObject{
         interactor.model.loadPostsFromAPI()
     }
     func loadLocal() {
-        print("Load Local Data: Presenter")
         interactor.model.LoadLocalPosts()
     }
     func setFavorite(index: Int){

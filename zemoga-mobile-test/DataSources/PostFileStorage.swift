@@ -42,8 +42,6 @@ class PostFileStorage {
                 self.loadFavorite(self.localFavoritesFile) { posts in
                     DispatchQueue.main.async {
                         promise(.success(posts))
-                        print("Load Favorites Complete")
-                        print(posts.count)
                     }
                 }
             }.eraseToAnyPublisher()
@@ -58,8 +56,6 @@ class PostFileStorage {
                 self.load(self.localFile) { posts in
                     DispatchQueue.main.async {
                         promise(.success(posts))
-                        print("Load Posts Complete")
-                        print(posts.count)
                     }
                 }
             }.eraseToAnyPublisher()
@@ -96,14 +92,12 @@ class PostFileStorage {
     private func load(_ file: URL, completion: @escaping ([Post]) -> Void) {
         DispatchQueue.main.async {
             let posts = self.loadSynchronously(file)
-            print(posts)
             completion(posts)
         }
     }
     private func loadFavorite(_ file: URL, completion: @escaping ([Post]) -> Void) {
         DispatchQueue.global(qos: .utility).async {
             let posts = self.loadSynchronously(file)
-            print(posts)
             completion(posts)
         }
     }

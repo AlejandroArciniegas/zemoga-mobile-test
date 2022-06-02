@@ -79,11 +79,8 @@ final class DataModel{
     func loadPostDetails(post: Post){
         provider.getPostAuthorData(id: post.userId){ (user) in
             self.user = user
-            print(user.name)
             self.provider.getCommentsForPostId(id: post.id){ (comments) in
                 self.comments = comments
-                print(comments[0].postId)
-                print(comments[0].body)
             }
         }
     }

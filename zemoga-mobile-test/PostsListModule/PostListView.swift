@@ -32,7 +32,6 @@ struct PostListView: View {
                     .onReceive(self.presenter.$favoritePosts, perform: { posts in
                         DispatchQueue.main.async {
                             if(self.presenter.favoritePosts.count>0){
-                                print("sorting")
                                 self.presenter.posts.sort{self.isInFavorites(post: $0) && !self.isInFavorites(post: $1)}
                                 presenter.cachePosts()
                             }
@@ -40,8 +39,8 @@ struct PostListView: View {
                     })
                     .refreshable {
                         await presenter.loadLocal()
-                        if await (presenter.posts.count > 0){
-                            print("There are posts!")
+                        if await (presenter.posts.count > 2){
+                            
                         }else{
                             await presenter.loadFromAPI()
                         }

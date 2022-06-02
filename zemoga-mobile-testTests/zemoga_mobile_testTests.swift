@@ -6,31 +6,76 @@
 //
 
 import XCTest
+import Combine
 @testable import zemoga_mobile_test
-
 class zemoga_mobile_testTests: XCTestCase {
+    private var cancellables: Set<AnyCancellable>!
+    private var postFileStorage: PostFileStorage!
+
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        cancellables = []
+        postFileStorage = PostFileStorage()
+
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        try super.tearDownWithError()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testPostFileStorageLoadDefault() throws {
+        //loads the default post from a embedded json
+        let posts = try awaitPublisher(postFileStorage.loadDefault())
+        if(posts.isEmpty){
+            XCTFail("Nothing was loaded, error on LoadDefault method")
         }
+        XCTAssertEqual(posts[0].id, 101, "id is not 101")
+        XCTAssertEqual(posts[0].userId, 1, "userId is not 1")
+        XCTAssert(posts[0].title == "Example Post")
     }
 
 }
+//Combine AwaitPublisher for Test Cases
+extension XCTestCase {
+    func awaitPublisher<T: Publisher>(
+        _ publisher: T,
+        timeout: TimeInterval = 10,
+        file: StaticString = #file,
+        line: UInt = #line
+    ) throws -> T.Output {
+        var result: Result<T.Output, Error>?
+        let expectation = self.expectation(description: "Awaiting publisher")
+
+        let cancellable = publisher.sink(
+            receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    result = .failure(error)
+                case .finished:
+                    break
+                }
+                expectation.fulfill()
+            },
+            receiveValue: { value in
+                result = .success(value)
+            }
+        )
+        waitForExpectations(timeout: timeout)
+        cancellable.cancel()
+
+        // Here we pass the original file and line number that
+        // our utility was called at, to tell XCTest to report
+        // any encountered errors at that original call site:
+        let unwrappedResult = try XCTUnwrap(
+            result,
+            "Awaited publisher did not produce any output",
+            file: file,
+            line: line
+        )
+
+        return try unwrappedResult.get()
+    }
+}
+
+

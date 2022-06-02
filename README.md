@@ -11,7 +11,12 @@
    For caching the posts I decided to go with file storage in JSON format, as the data is publicly available there are no security corncerns, nontheless the file is stored under the .userDomainMask, it has the same structure of the response from the API so the entities could code and decode the data easily.
     
   The only third-party library is Refreshable, is a SwiftUI Component Extension that was introduced natively in iOS 15.0 but ist not available in iOS 14.0. It's used for the pull down to refresh feature.
+  
+  Unit Testing should follow the best practices starting for the acronym FIRST, fast, independent, repeatable, self-validating, timely.
+  In this project we are using Combine which is a "Customize handling of asynchronous events by combining event-processing operators."
+which further helps with the Clean Architecture Proposed by the VIPER Pattern. 
 
+To unit test Combine it was necessary to creat an extension, in order to wait for the data to be asynchronously retrieved. For the time I had and nature of the project I've only added a test for loading the default post. 
 
 ## Features
 - [x] Local Posts are loaded first, to load post from the API drag the screen down 
@@ -28,7 +33,7 @@
 
 ## Installation
 
-#### Basice Installation
+#### Basic Installation
 1. Clone
 2. Run on Physical Device or Simulator iOS 14.0+
 

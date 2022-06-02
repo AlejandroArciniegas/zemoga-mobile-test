@@ -16,11 +16,13 @@
   In this project we are using Combine which is a "Customize handling of asynchronous events by combining event-processing operators."
 which further helps with the Clean Architecture Proposed by the VIPER Pattern. 
 
-To unit test Combine it was necessary to creat an extension, in order to wait for the data to be asynchronously retrieved. For the time I had and nature of the project I've only added a test for loading the default post. 
+To unit test Combine it was necessary to create an extension, in order to wait for the data to be asynchronously retrieved. For the time I had and nature of the project I've only added a test for loading the default post. 
+
+The UI is simple and tries to follow the apple native design guidelines but it might lack of UX.
 
 ## Features
 - [x] Local Posts are loaded first, to load post from the API drag the screen down 
-- [x] Load post, post details, user and comments from JSONPlaceHolder 
+- [x] Load post, post details, user and comments from JSONPlaceHolder
 - [x] Cache List of Posts
 - [x] Delete Individual Post
 - [x] Delete All Post (including favorites)
@@ -40,7 +42,6 @@ To unit test Combine it was necessary to creat an extension, in order to wait fo
 ## Meta
 
 Alejandro Arciniegas – [@alejandroarciniegas.dev](https://www.instagram.com/alejandroarciniegas.dev/) – alejandroarciniegasf@gmail.com
-
 
 
 [swift-image]:https://img.shields.io/badge/swift-5.0-green.svg

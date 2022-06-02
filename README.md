@@ -38,7 +38,5 @@ Alejandro Arciniegas – [@alejandroarciniegas.dev](https://www.instagram.com/al
 
 
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
 [swift-image]:https://img.shields.io/badge/swift-5.0-green.svg
 [swift-url]: https://swift.org/

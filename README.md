@@ -3,19 +3,15 @@
 
 
 # Zemoga iOS Mobile Test
-<br />
-<p align="center">
-  <p align="center">
-    This app was designed and built around Uncle Bob's Clean Code and Clean Architecture Paradigm, here the VIPER(View Interactor Presenter Entity Router) Pattern. Isolate responsabilties allowing us to have different data sources and entities, modify them or extend them  without  modifiying the logic or UI layer of the app. There's place for refactoring but for the purpuse of this test and the time frame I decided to keep it simple and understandable
-    
-    The main Modules are PostsListModule and PostDetailModule which contain the logic, ui and data communication layers for each module. Then we have entities which are the models such as Post, User and Comment. The DataModel is a class that contain the methods to retrieve the data from the different sources or entities and provide to the presenter and interactor. This easily could be the data layer gateway. If we needed to separate the data logic for each module we could easily do so with this project architecture. There's always place for improvement and having the responsability of each component of the VIPER architecture makes the project sustainable and easy to debug.
-    
-    For caching the posts I decided to go with file storage in JSON format, as the data is publicly available there are no security corncerns, nontheless the file is stored under the .userDomainMask, it has the same structure of the response from the API so the entities could code and decode the data easily.
-    
-    The only third-party library is Refreshable, is a SwiftUI Component Extension that was introduced natively in iOS 15.0 but ist not available in iOS 14.0. It's used for the pull down to refresh feature.
 
-  </p>
-</p>
+  This app was designed and built around Uncle Bob's Clean Code and Clean Architecture Paradigm, here the VIPER(View Interactor Presenter Entity Router) Pattern. Isolate responsabilties allowing us to have different data sources and entities, modify them or extend them  without  modifiying the logic or UI layer of the app. There's place for refactoring but for the purpuse of this test and the time frame I decided to keep it simple and understandable
+    
+   The main Modules are PostsListModule and PostDetailModule which contain the logic, ui and data communication layers for each module. Then we have entities which are the models such as Post, User and Comment. The DataModel is a class that contain the methods to retrieve the data from the different sources or entities and provide to the presenter and interactor. This easily could be the data layer gateway. If we needed to separate the data logic for each module we could easily do so with this project architecture. There's always place for improvement and having the responsability of each component of the VIPER architecture makes the project sustainable and easy to debug.
+    
+   For caching the posts I decided to go with file storage in JSON format, as the data is publicly available there are no security corncerns, nontheless the file is stored under the .userDomainMask, it has the same structure of the response from the API so the entities could code and decode the data easily.
+    
+  The only third-party library is Refreshable, is a SwiftUI Component Extension that was introduced natively in iOS 15.0 but ist not available in iOS 14.0. It's used for the pull down to refresh feature.
+
 
 ## Features
 - [x] Local Posts are loaded first, to load post from the API drag the screen down 

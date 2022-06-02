@@ -1,0 +1,12 @@
+{
+    "posts":
+    [
+        {
+            "userId": 1,
+            "id": 101,
+            "title": "Example Post",
+            "body": "This is an example post, useful for SwiftUI Previews."
+          }
+    ]
+    
+}

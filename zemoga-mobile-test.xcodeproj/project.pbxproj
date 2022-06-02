@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF5AFE432848183D002BA0C4 /* default-favorites.json in Resources */ = {isa = PBXBuildFile; fileRef = DF5AFE422848183D002BA0C4 /* default-favorites.json */; };
+		DFB718902847015500DDA3C2 /* PostListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7188F2847015500DDA3C2 /* PostListRouter.swift */; };
+		DFB7189228470A2800DDA3C2 /* JSONPlaceHolderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7189128470A2800DDA3C2 /* JSONPlaceHolderAPI.swift */; };
+		DFB7189428470D7C00DDA3C2 /* PostFileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7189328470D7C00DDA3C2 /* PostFileStorage.swift */; };
+		DFB718972847119D00DDA3C2 /* Refreshable in Frameworks */ = {isa = PBXBuildFile; productRef = DFB718962847119D00DDA3C2 /* Refreshable */; };
+		DFB7189C2847191700DDA3C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7189B2847191700DDA3C2 /* User.swift */; };
+		DFB7189E28471BA000DDA3C2 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7189D28471BA000DDA3C2 /* Comment.swift */; };
+		DFB718A02847A07700DDA3C2 /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7189F2847A07700DDA3C2 /* PostDetailInteractor.swift */; };
+		DFB718A22847A08F00DDA3C2 /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB718A12847A08F00DDA3C2 /* PostDetailPresenter.swift */; };
+		DFB718A42847A0A200DDA3C2 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB718A32847A0A200DDA3C2 /* PostDetailView.swift */; };
+		DFF4F6172846D96D00396F8F /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F6162846D96D00396F8F /* Main.swift */; };
+		DFF4F6192846D96D00396F8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F6182846D96D00396F8F /* ContentView.swift */; };
+		DFF4F61B2846D96F00396F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF4F61A2846D96F00396F8F /* Assets.xcassets */; };
+		DFF4F61E2846D96F00396F8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF4F61D2846D96F00396F8F /* Preview Assets.xcassets */; };
+		DFF4F6282846D96F00396F8F /* zemoga_mobile_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F6272846D96F00396F8F /* zemoga_mobile_testTests.swift */; };
+		DFF4F6322846D96F00396F8F /* zemoga_mobile_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F6312846D96F00396F8F /* zemoga_mobile_testUITests.swift */; };
+		DFF4F6342846D96F00396F8F /* zemoga_mobile_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F6332846D96F00396F8F /* zemoga_mobile_testUITestsLaunchTests.swift */; };
+		DFF4F6462846DBD200396F8F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F6452846DBD200396F8F /* Post.swift */; };
+		DFF4F6492846E20300396F8F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F6482846E20300396F8F /* DataModel.swift */; };
+		DFF4F64D2846EA1E00396F8F /* PostListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F64C2846EA1E00396F8F /* PostListInteractor.swift */; };
+		DFF4F64F2846EAE800396F8F /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F64E2846EAE800396F8F /* PostListPresenter.swift */; };
+		DFF4F6532846ECBD00396F8F /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F6522846ECBD00396F8F /* PostListView.swift */; };
+		DFF4F6562846EDB100396F8F /* PostListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF4F6552846EDB100396F8F /* PostListCellView.swift */; };
+		DFF4F6592846FAF300396F8F /* default.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF4F6582846FAF300396F8F /* default.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFF4F6242846D96F00396F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF4F60B2846D96D00396F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFF4F6122846D96D00396F8F;
+			remoteInfo = "zemoga-mobile-test";
+		};
+		DFF4F62E2846D96F00396F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF4F60B2846D96D00396F8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFF4F6122846D96D00396F8F;
+			remoteInfo = "zemoga-mobile-test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF5AFE422848183D002BA0C4 /* default-favorites.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "default-favorites.json"; sourceTree = "<group>"; };
+		DFB7188F2847015500DDA3C2 /* PostListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListRouter.swift; sourceTree = "<group>"; };
+		DFB7189128470A2800DDA3C2 /* JSONPlaceHolderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceHolderAPI.swift; sourceTree = "<group>"; };
+		DFB7189328470D7C00DDA3C2 /* PostFileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFileStorage.swift; sourceTree = "<group>"; };
+		DFB7189B2847191700DDA3C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DFB7189D28471BA000DDA3C2 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		DFB7189F2847A07700DDA3C2 /* PostDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
+		DFB718A12847A08F00DDA3C2 /* PostDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		DFB718A32847A0A200DDA3C2 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		DFF4F6132846D96D00396F8F /* zemoga-mobile-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zemoga-mobile-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF4F6162846D96D00396F8F /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		DFF4F6182846D96D00396F8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DFF4F61A2846D96F00396F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFF4F61D2846D96F00396F8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFF4F6232846D96F00396F8F /* zemoga-mobile-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "zemoga-mobile-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF4F6272846D96F00396F8F /* zemoga_mobile_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemoga_mobile_testTests.swift; sourceTree = "<group>"; };
+		DFF4F62D2846D96F00396F8F /* zemoga-mobile-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "zemoga-mobile-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF4F6312846D96F00396F8F /* zemoga_mobile_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemoga_mobile_testUITests.swift; sourceTree = "<group>"; };
+		DFF4F6332846D96F00396F8F /* zemoga_mobile_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemoga_mobile_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DFF4F6452846DBD200396F8F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DFF4F6482846E20300396F8F /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		DFF4F64C2846EA1E00396F8F /* PostListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListInteractor.swift; sourceTree = "<group>"; };
+		DFF4F64E2846EAE800396F8F /* PostListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
+		DFF4F6522846ECBD00396F8F /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		DFF4F6552846EDB100396F8F /* PostListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCellView.swift; sourceTree = "<group>"; };
+		DFF4F6582846FAF300396F8F /* default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = default.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFF4F6102846D96D00396F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB718972847119D00DDA3C2 /* Refreshable in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF4F6202846D96F00396F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF4F62A2846D96F00396F8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFB71898284715DF00DDA3C2 /* PostDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				DFB7189F2847A07700DDA3C2 /* PostDetailInteractor.swift */,
+				DFB718A12847A08F00DDA3C2 /* PostDetailPresenter.swift */,
+				DFB718A32847A0A200DDA3C2 /* PostDetailView.swift */,
+			);
+			path = PostDetailModule;
+			sourceTree = "<group>";
+		};
+		DFF4F60A2846D96D00396F8F = {
+			isa = PBXGroup;
+			children = (
+				DFF4F6152846D96D00396F8F /* zemoga-mobile-test */,
+				DFF4F6262846D96F00396F8F /* zemoga-mobile-testTests */,
+				DFF4F6302846D96F00396F8F /* zemoga-mobile-testUITests */,
+				DFF4F6142846D96D00396F8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFF4F6142846D96D00396F8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4F6132846D96D00396F8F /* zemoga-mobile-test.app */,
+				DFF4F6232846D96F00396F8F /* zemoga-mobile-testTests.xctest */,
+				DFF4F62D2846D96F00396F8F /* zemoga-mobile-testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFF4F6152846D96D00396F8F /* zemoga-mobile-test */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4F6402846DA4C00396F8F /* Entities */,
+				DFF4F6542846ED8600396F8F /* Views */,
+				DFF4F6432846DB5F00396F8F /* DataSources */,
+				DFF4F6422846DB3600396F8F /* PostsListModule */,
+				DFB71898284715DF00DDA3C2 /* PostDetailModule */,
+				DFF4F6162846D96D00396F8F /* Main.swift */,
+				DFF4F6182846D96D00396F8F /* ContentView.swift */,
+				DFF4F61A2846D96F00396F8F /* Assets.xcassets */,
+				DF5AFE422848183D002BA0C4 /* default-favorites.json */,
+				DFF4F6582846FAF300396F8F /* default.json */,
+				DFF4F61C2846D96F00396F8F /* Preview Content */,
+			);
+			path = "zemoga-mobile-test";
+			sourceTree = "<group>";
+		};
+		DFF4F61C2846D96F00396F8F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4F61D2846D96F00396F8F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFF4F6262846D96F00396F8F /* zemoga-mobile-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4F6272846D96F00396F8F /* zemoga_mobile_testTests.swift */,
+			);
+			path = "zemoga-mobile-testTests";
+			sourceTree = "<group>";
+		};
+		DFF4F6302846D96F00396F8F /* zemoga-mobile-testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4F6312846D96F00396F8F /* zemoga_mobile_testUITests.swift */,
+				DFF4F6332846D96F00396F8F /* zemoga_mobile_testUITestsLaunchTests.swift */,
+			);
+			path = "zemoga-mobile-testUITests";
+			sourceTree = "<group>";
+		};
+		DFF4F6402846DA4C00396F8F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4F6452846DBD200396F8F /* Post.swift */,
+				DFB7189B2847191700DDA3C2 /* User.swift */,
+				DFB7189D28471BA000DDA3C2 /* Comment.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DFF4F6422846DB3600396F8F /* PostsListModule */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4F64C2846EA1E00396F8F /* PostListInteractor.swift */,
+				DFF4F64E2846EAE800396F8F /* PostListPresenter.swift */,
+				DFF4F6522846ECBD00396F8F /* PostListView.swift */,
+				DFB7188F2847015500DDA3C2 /* PostListRouter.swift */,
+			);
+			path = PostsListModule;
+			sourceTree = "<group>";
+		};
+		DFF4F6432846DB5F00396F8F /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4F6482846E20300396F8F /* DataModel.swift */,
+				DFB7189128470A2800DDA3C2 /* JSONPlaceHolderAPI.swift */,
+				DFB7189328470D7C00DDA3C2 /* PostFileStorage.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		DFF4F6542846ED8600396F8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFF4F6552846EDB100396F8F /* PostListCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFF4F6122846D96D00396F8F /* zemoga-mobile-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF4F6372846D96F00396F8F /* Build configuration list for PBXNativeTarget "zemoga-mobile-test" */;
+			buildPhases = (
+				DFF4F60F2846D96D00396F8F /* Sources */,
+				DFF4F6102846D96D00396F8F /* Frameworks */,
+				DFF4F6112846D96D00396F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "zemoga-mobile-test";
+			packageProductDependencies = (
+				DFB718962847119D00DDA3C2 /* Refreshable */,
+			);
+			productName = "zemoga-mobile-test";
+			productReference = DFF4F6132846D96D00396F8F /* zemoga-mobile-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFF4F6222846D96F00396F8F /* zemoga-mobile-testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF4F63A2846D96F00396F8F /* Build configuration list for PBXNativeTarget "zemoga-mobile-testTests" */;
+			buildPhases = (
+				DFF4F61F2846D96F00396F8F /* Sources */,
+				DFF4F6202846D96F00396F8F /* Frameworks */,
+				DFF4F6212846D96F00396F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFF4F6252846D96F00396F8F /* PBXTargetDependency */,
+			);
+			name = "zemoga-mobile-testTests";
+			productName = "zemoga-mobile-testTests";
+			productReference = DFF4F6232846D96F00396F8F /* zemoga-mobile-testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFF4F62C2846D96F00396F8F /* zemoga-mobile-testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF4F63D2846D96F00396F8F /* Build configuration list for PBXNativeTarget "zemoga-mobile-testUITests" */;
+			buildPhases = (
+				DFF4F6292846D96F00396F8F /* Sources */,
+				DFF4F62A2846D96F00396F8F /* Frameworks */,
+				DFF4F62B2846D96F00396F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFF4F62F2846D96F00396F8F /* PBXTargetDependency */,
+			);
+			name = "zemoga-mobile-testUITests";
+			productName = "zemoga-mobile-testUITests";
+			productReference = DFF4F62D2846D96F00396F8F /* zemoga-mobile-testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFF4F60B2846D96D00396F8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					DFF4F6122846D96D00396F8F = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					DFF4F6222846D96F00396F8F = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = DFF4F6122846D96D00396F8F;
+					};
+					DFF4F62C2846D96F00396F8F = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = DFF4F6122846D96D00396F8F;
+					};
+				};
+			};
+			buildConfigurationList = DFF4F60E2846D96D00396F8F /* Build configuration list for PBXProject "zemoga-mobile-test" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFF4F60A2846D96D00396F8F;
+			packageReferences = (
+				DFB718952847119D00DDA3C2 /* XCRemoteSwiftPackageReference "iOS.Package" */,
+			);
+			productRefGroup = DFF4F6142846D96D00396F8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFF4F6122846D96D00396F8F /* zemoga-mobile-test */,
+				DFF4F6222846D96F00396F8F /* zemoga-mobile-testTests */,
+				DFF4F62C2846D96F00396F8F /* zemoga-mobile-testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFF4F6112846D96D00396F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF4F6592846FAF300396F8F /* default.json in Resources */,
+				DF5AFE432848183D002BA0C4 /* default-favorites.json in Resources */,
+				DFF4F61E2846D96F00396F8F /* Preview Assets.xcassets in Resources */,
+				DFF4F61B2846D96F00396F8F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF4F6212846D96F00396F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF4F62B2846D96F00396F8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFF4F60F2846D96D00396F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB7189428470D7C00DDA3C2 /* PostFileStorage.swift in Sources */,
+				DFF4F64F2846EAE800396F8F /* PostListPresenter.swift in Sources */,
+				DFB718A22847A08F00DDA3C2 /* PostDetailPresenter.swift in Sources */,
+				DFB718A42847A0A200DDA3C2 /* PostDetailView.swift in Sources */,
+				DFF4F64D2846EA1E00396F8F /* PostListInteractor.swift in Sources */,
+				DFB718A02847A07700DDA3C2 /* PostDetailInteractor.swift in Sources */,
+				DFF4F6532846ECBD00396F8F /* PostListView.swift in Sources */,
+				DFF4F6462846DBD200396F8F /* Post.swift in Sources */,
+				DFF4F6492846E20300396F8F /* DataModel.swift in Sources */,
+				DFF4F6192846D96D00396F8F /* ContentView.swift in Sources */,
+				DFB718902847015500DDA3C2 /* PostListRouter.swift in Sources */,
+				DFB7189E28471BA000DDA3C2 /* Comment.swift in Sources */,
+				DFB7189C2847191700DDA3C2 /* User.swift in Sources */,
+				DFB7189228470A2800DDA3C2 /* JSONPlaceHolderAPI.swift in Sources */,
+				DFF4F6172846D96D00396F8F /* Main.swift in Sources */,
+				DFF4F6562846EDB100396F8F /* PostListCellView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF4F61F2846D96F00396F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF4F6282846D96F00396F8F /* zemoga_mobile_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF4F6292846D96F00396F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF4F6322846D96F00396F8F /* zemoga_mobile_testUITests.swift in Sources */,
+				DFF4F6342846D96F00396F8F /* zemoga_mobile_testUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFF4F6252846D96F00396F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFF4F6122846D96D00396F8F /* zemoga-mobile-test */;
+			targetProxy = DFF4F6242846D96F00396F8F /* PBXContainerItemProxy */;
+		};
+		DFF4F62F2846D96F00396F8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFF4F6122846D96D00396F8F /* zemoga-mobile-test */;
+			targetProxy = DFF4F62E2846D96F00396F8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFF4F6352846D96F00396F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFF4F6362846D96F00396F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFF4F6382846D96F00396F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"zemoga-mobile-test/Preview Content\"";
+				DEVELOPMENT_TEAM = HG72AKD525;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandroarciniegasf.zemoga-mobile-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFF4F6392846D96F00396F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"zemoga-mobile-test/Preview Content\"";
+				DEVELOPMENT_TEAM = HG72AKD525;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandroarciniegasf.zemoga-mobile-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFF4F63B2846D96F00396F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HG72AKD525;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandroarciniegasf.zemoga-mobile-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zemoga-mobile-test.app/zemoga-mobile-test";
+			};
+			name = Debug;
+		};
+		DFF4F63C2846D96F00396F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HG72AKD525;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandroarciniegasf.zemoga-mobile-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zemoga-mobile-test.app/zemoga-mobile-test";
+			};
+			name = Release;
+		};
+		DFF4F63E2846D96F00396F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HG72AKD525;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandroarciniegasf.zemoga-mobile-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "zemoga-mobile-test";
+			};
+			name = Debug;
+		};
+		DFF4F63F2846D96F00396F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HG72AKD525;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alejandroarciniegasf.zemoga-mobile-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "zemoga-mobile-test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFF4F60E2846D96D00396F8F /* Build configuration list for PBXProject "zemoga-mobile-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF4F6352846D96F00396F8F /* Debug */,
+				DFF4F6362846D96F00396F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF4F6372846D96F00396F8F /* Build configuration list for PBXNativeTarget "zemoga-mobile-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF4F6382846D96F00396F8F /* Debug */,
+				DFF4F6392846D96F00396F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF4F63A2846D96F00396F8F /* Build configuration list for PBXNativeTarget "zemoga-mobile-testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF4F63B2846D96F00396F8F /* Debug */,
+				DFF4F63C2846D96F00396F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF4F63D2846D96F00396F8F /* Build configuration list for PBXNativeTarget "zemoga-mobile-testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF4F63E2846D96F00396F8F /* Debug */,
+				DFF4F63F2846D96F00396F8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFB718952847119D00DDA3C2 /* XCRemoteSwiftPackageReference "iOS.Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Geri-Borbas/iOS.Package.Refreshable";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFB718962847119D00DDA3C2 /* Refreshable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFB718952847119D00DDA3C2 /* XCRemoteSwiftPackageReference "iOS.Package" */;
+			productName = Refreshable;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DFF4F60B2846D96D00396F8F /* Project object */;
+}

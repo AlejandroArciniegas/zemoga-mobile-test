@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F4CFC913-1315-4777-9734-2EBAEF77F8C8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A388FE12-36C1-4A9F-84D2-8D6CE6801404"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zemoga-mobile-test/Entities/PostDataModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "toggleFavorite(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A13AB2A5-080F-475E-A9CD-0188A431D732"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zemoga-mobile-test/PostsListModule/PostListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "PostListInteractor"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A13AB2A5-080F-475E-A9CD-0188A431D732 - f40a85d5607bb242"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zemoga_mobile_test.PostListInteractor.deinit"
+                  moduleName = "zemoga-mobile-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/strutcompany/Desktop/zemoga-mobile-test/zemoga-mobile-test/PostsListModule/PostListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "A13AB2A5-080F-475E-A9CD-0188A431D732 - f49f6f0f93e340bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zemoga_mobile_test.PostListInteractor.__deallocating_deinit"
+                  moduleName = "zemoga-mobile-test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/strutcompany/Desktop/zemoga-mobile-test/zemoga-mobile-test/PostsListModule/PostListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

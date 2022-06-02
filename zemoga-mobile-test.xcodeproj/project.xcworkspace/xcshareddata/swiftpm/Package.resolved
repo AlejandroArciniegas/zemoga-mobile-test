@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "ios.package.refreshable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Geri-Borbas/iOS.Package.Refreshable",
+      "state" : {
+        "branch" : "main",
+        "revision" : "aa1dfcb4e9eccd120a35e3fc4f5c4359e69a4f96"
+      }
+    },
+    {
+      "identity" : "swiftui-introspect",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/siteline/SwiftUI-Introspect.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7ef0df639079491ee1aaf6b83b6fd4d08df80393"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -17,7 +17,7 @@
 - [x] Local Posts are loaded first, to load post from the API drag the screen down 
 - [x] Load post, post details, user and comments from JSONPlaceHolder 
 - [x] Cache List of Posts
-- [x] Delete Individual Post
+- [x] Delete Individual Post
 - [x] Delete All Post (including favorites)
 - [x] Favorite Post are sorted to the top or display on individual "favorites tab"
 
